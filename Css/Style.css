@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap");
+
+:root {
+  --maicolor: #ffc527;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+  text-align: right;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.section-title::after {
+  content: "";
+  height: 5px;
+  width: 120px;
+  display: block;
+  background-color: var(--maicolor);
+  position: absolute;
+  bottom: -10px;
+}
+
+.navbar {
+  box-shadow: 1px 2px 5px #ebebeb;
+}
+
+.home {
+  height: 600px;
+  background-size: cover;
+  background-image: url(../Images/slide-bg-1.jpg);
+  padding: 1px;
+}
+
+.home .home-item {
+  width: 50%;
+  margin-right: auto;
+  margin-top: 18%;
+}
+
+.home .home-item h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.home .home-item p {
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: 400px;
+  }
+
+  .home .home-item {
+    width: 100%;
+  }
+}
+
+/************************          Section       About            ********************/
+
+.about {
+  padding: 80px 0;
+}
+
+.about .about-item div.btn {
+  margin-bottom: 15px;
+}
+
+.about .about-item p {
+  margin: 50px 0;
+}
+
+/************************          Section       Services            ********************/
+
+.news {
+  padding: 80px 0;
+}
+
+.news .news-left {
+  display: flex;
+  align-items: center;
+}
+
+.news .news-left img {
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+/************************          Section       Subscribe            ********************/
+
+.subscribe {
+  height: 450px;
+  color: #fff;
+  background-image: url(../Images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  padding: 1px;
+  position: relative;
+}
+
+.subscribe .subscribe-item {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subscribe .subscribe-item h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subscribe .subscribe-item form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe .subscribe-item form div {
+  width: 80%;
+}
+
+.subscribe .subscribe-item form div input {
+  width: 100%;
+}
+
+.subscribe .subscribe-item form .btn {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .subscribe .subscribe-item {
+    width: 80%;
+  }
+  .subscribe .subscribe-item form {
+    flex-direction: column;
+  }
+  .subscribe .subscribe-item form input,
+  .subscribe .subscribe-item form .btn {
+    width: 100%;
+  }
+}
+
+/************************          Section       Subscribe            ********************/
+
+.footer {
+  padding: 80px 0;
+  background-color: #071c33;
+  color: #fff;
+}
+
+.footer span {
+  background-color: #fff;
+  color: #222;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.footer .links ul li a {
+  color: var(--maicolor);
+}
+
+.footer .links ul li a:hover {
+  opacity: 0.6;
+}
+
+.footer .news-left {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.footer .news-left img {
+  max-width: 50px;
+  margin-left: 10px;
+}
+
+.footer .news-left p {
+  font-size: 12px;
+}
